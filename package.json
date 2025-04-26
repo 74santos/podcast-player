@@ -1,0 +1,25 @@
+{
+  "name": "podcast-player",
+  "version": "1.0.0",
+  "description": "Podcast player to listen to podcast",
+  "main": ".script.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/74santos/podcast-player.git"
+  },
+  "author": "Chris Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/74santos/podcast-player/issues"
+  },
+  "homepage": "https://github.com/74santos/podcast-player#readme",
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-fetch": "^2.7.0"
+  }
+}
