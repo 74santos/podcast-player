@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superflow Creatives // Podcast Player</title>
+   <!--favicon-->
+   <link rel="icon" type="image/png" href="favicon-zyra.png">
+
+   <!--Font Awesome-->
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+
+<body>
+
+<!-- Navigation -->
+<div class="nav-wrapper">
+    <nav class="nav">
+        <h1 class="nav-title" id="homeTitle">SonicNest</h1><!-- Sonic = sound / Nest = cozy place for all podcasts -->
+        <i class="fa-solid fa-podcast"></i>
+
+        <!-- Mobile Navigation -->
+        <div class="nav-list">
+            <span id="searchLink" class="selected">
+                Search
+            </span>
+            <span id="listenLink">Listen</span>
+        </div>
+    </nav>
+</div>
+
+<div class="page-wrapper">
+    <!-- Search Container -->
+     <div class="search-container">
+        <!--Search History -->
+        <div class="custom-select">
+            <select name="searchHistory" id="searchHistory" title="Search History">
+                <option value="">Select a Previous Search</option>
+            </select>
+        </div>
+        <!--Search Input-->
+        <input type="text" id="searchInput" placeholder="Search by Podcast / Topic">
+        <!--Search Buttons-->
+        <div class="search-buttons">
+            <button id="searchButton" type="button">Search</button>
+            <button id="resetButton" type="button">Clear History</button>
+        </div>
+     </div>
+
+     <!--Main Container-->
+     <div class="main-container">
+
+<!-- Loader -->
+        <div id="loader" class="loading-container">
+            <i class="fa-solid fa-podcast "></i>
+        </div>
+
+        <!--Cards Container-->
+        <div id="response" class="cards-container">
+            <!-- <div class="card">
+                <img src="./podcast-logo-sonicNest.png" alt="Podcast Image" >
+                <div class="card-content">
+                    <h3>Podcast Title</h3>
+                    <p>Lorem ipsum dolr sit amet consectetur adipisicing elit.Auoud expercitatlonem aliquid nostrm fugaolabori vitae porro ut.Lorem ipsum dolr sit amet consectetur adipisicing elit.Auoud expercitatlonem aliquid nostrmsit amet consectetur adipisicing elit.Auoud expercitatlonem aliquid nostrm fugaolabori vitae porro ut.</p>
+                    <p class="episode-count">Episodes: 50</p>
+                    <p class="pub-date">Newest Episode: 2025-28-03</p>
+                </div>
+            </div> -->
+
+       
+        </div>
+    </div>
+
+     <!--Player Container-->
+     <div class="player-container">
+            <div class="player">
+                <!--Image-->
+                    <div class="img-container">
+                        <img id="image" src="./podcast-logo-sonicNest.png" alt="Podcast Image">
+                    </div>
+                <!-- Title Container -->    
+                    <div class="title-container">
+                        <h2 id="title">Podcast Title</h2>
+                        <h3 id="datePublished">Date Published</h3>
+                    </div>
+                <!--Audio Element-->
+                    <audio id="player" src=""></audio>
+                    <div class="controls-container">
+                <!-- Progress -->
+                        <div class="progress-container" id="progress-container">
+                            <div class="progress" id="progress"></div>
+                            <div class="duration-wrapper">
+                                <span id="current-time">0:00</span>
+                                <span id="duration">0:00</span>
+                            </div>
+                        </div>
+                <!-- Controls -->
+                        <div class="player-controls">
+                            <i class="fas fa-backward" id="prev" title="-15 Seconds"></i>
+                            <i class="fas fa-play main-button" id="play" title="Play"></i>
+                            <i class="fas fa-forward" id="next" title="+15 Seconds"></i>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="queue">
+                
+            </div>
+     </div>
+
+     <!---->
+</div>
+
+    <!--Script-->
+    <script src="script.js"></script>
+    <!--Script-->
+</body>
+
+</html>
